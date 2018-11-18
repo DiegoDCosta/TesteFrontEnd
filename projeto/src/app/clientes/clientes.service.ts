@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
 
 import { API } from "../API";
 import { Clientes } from "./clientes";
@@ -16,7 +15,7 @@ export class ClientesService {
     private http:HttpClient
   ) { }
 
-  getClientes():Observable<any> {
+  getClientes(){
     return this.http.get<Clientes[]>(`${API}/clientes.json`);
   }
 }
