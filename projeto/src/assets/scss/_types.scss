@@ -1,0 +1,110 @@
+body {
+    color: map-get($gray, 4);
+    @include font-size(13);
+    font-family: SourceSansPro;
+}
+
+// headers
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: map-get($green, 1);
+    @include margin(0, 0);
+}
+
+h1 {
+    @include font-size(15);
+    font-family: SourceSansPro-Bold;
+    color: map-get($green, 1);
+    font-style: italic;
+}
+
+h2 {
+    @include font-size(14);
+    font-family: SourceSansPro-Regular;
+    color: map-get($gray, 4);
+    @include margin(10px, 0);
+    font-weight: 200;
+}
+
+// paragrafo
+p {
+    @include font-size(13);
+    color: map-get($gray, 4)
+}
+
+//labels
+label {
+    @include font-size(10);
+    font-family: SourceSansPro-Bold;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: map-get($green, 1);
+}
+
+input[type="text"],
+select {
+    @include font-size(13);
+}
+
+button {
+    @include font-size(13);
+}
+
+table {
+    @include font-size(10);
+    @include padding(0, 0);
+    @include margin(0, 0);
+    border-collapse: collapse;
+    width: 100%;
+    thead {
+        text-align: left;
+        font-family: SourceSansPro-Bold;
+        background-color: map-get($green, 2);
+        font-weight: bold;
+        text-transform: uppercase;
+        color: map-get($green, 1);
+        tr {
+            th {
+                @include padding(10px, 10px);
+            }
+        }
+    }
+    tbody {
+        border-bottom: 1px solid map-get($gray, 4);
+        td {
+            padding: 10px;
+        }
+    }
+}
+
+//forms
+input,
+select {
+    border: none;
+    border-bottom: solid 1px map-get($gray, 4);
+    outline: none;
+    height: 26px;
+    @include x-transition(0.2s ease all);
+    @include font-size(13);
+    font-family: SourceSansPro-Regular;
+    &:focus {
+        box-shadow: none;
+        border-bottom-color: rgba(0, 0, 0, 0.12);
+        @include x-transition(0.2s ease all);
+    }
+    &:not(:focus) {
+        @include x-transition(0.2s ease all);
+    }
+}
+
+.btn {
+    font-family: SourceSansPro-Semibold!important;
+    text-transform: capitalize;
+    font-size: 13px!important;
+    line-height: 26px!important;
+    padding: 0 10px!important;
+}

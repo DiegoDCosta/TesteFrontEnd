@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+//import all styles
+@import "assets/scss/mixins/flexbox";
+@import "assets/scss/mixins/utilities";
+@import "assets/scss/mixins/partials/partials";
+//
+@import "assets/scss/paths";
+@import "assets/scss/fonts";
+@import "assets/scss/resets";
+@import "assets/scss/colors";
+@import "assets/scss/types";
+//
+@import "assets/scss/media_queries"; // esse import deve sempre ser o último
+// LAYOUT EM HTML QUE SERÁ DISTRIBUIDO EM COMPONENT DEPOIS
+@import "assets/scss/components/layout"; // IMPORT MATERIAL DESIGN //
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";

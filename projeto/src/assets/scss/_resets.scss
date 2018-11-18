@@ -1,0 +1,9 @@
+body {
+    @include padding(0, 0);
+    @include margin(0, 0);
+}
+
+ul {
+    list-style: none;
+    @include padding(0, 0);
+}

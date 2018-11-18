@@ -1,0 +1,138 @@
+<section>
+    <div class="container">
+        <aside class="coluna-esquerda">
+            <header>
+                <div class="input-group">
+                    <input type="text" class="input_search" placeholder="Paulo">
+                    <button mat-button class="btn_search"></button>
+                </div>
+            </header>
+            <div class="clients">
+                <ul>
+                    <li class="clients_list">
+                        <a>
+                            <span class="clients_list_email">paulinho.fm@gmail.com</span>
+                            <span class="clients_list_name">Paulo Fernandes Mancuso</span>
+                            <span class="clients_list_cod">1167289039-39</span>
+                        </a>
+                    </li>
+                    <li class="clients_list">
+                        <a>
+                            <span class="clients_list_email">paulinho.fm@gmail.com</span>
+                            <span class="clients_list_name">Paulo Fernandes Mancuso</span>
+                            <span class="clients_list_cod">1167289039-39</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <main class="coluna-direita">
+            <header>
+                <h1 class="titulo_principal">Fidelidade</h1>
+            </header>
+            <section>
+                <!-- component de abas -->
+                <mat-tab-group>
+                    <mat-tab label="TRANSAÇÕES">
+                        <div class="tab">
+                            <div class="tab_item">saldo<br>...</div>
+                            <div class="tab_item">histórico<br>...</div>
+                            <div class="tab_item">utilizados<br>...</div>
+                            <div class="tab_item">perdidos<br>...</div>
+                        </div>
+                    </mat-tab>
+                    <mat-tab label="BENEFÍCIOS">
+                        <div class="tab">
+                            <div class="tab_item">benefícios<br>...</div>
+                        </div>
+                    </mat-tab>
+                    <mat-tab label="HISTÓRICO">
+                        <div class="tab">
+                            <div class="tab_item">Histórico<br>...</div>
+                        </div>
+                    </mat-tab>
+                </mat-tab-group>
+                <!-- //component de abas -->
+            </section>
+            <section>
+                <div class="content">
+                    <div class="add_note">
+                        <div class="store">
+                            <h1>Adicionar nota</h1>
+                            <form class="store_form">
+                                <div class="row">
+                                    <div class="input-group-form store_form_store">
+                                        <label>loja</label>
+                                        <input type="text" placeholder="Razão social, nome fantasia ou CNPJ">
+                                    </div>
+                                </div>
+                                <div class="row store_form_notas">
+                                    <div class="input-group-form">
+                                        <label>No DA NOTA</label>
+                                        <input type="text" placeholder="---">
+                                    </div>
+                                    <div class="input-group-form">
+                                        <label>DATA DA NOTA</label>
+                                        <input type="text" placeholder="---">
+                                    </div>
+                                    <div class="input-group-form">
+                                        <label>forma de pagamento</label>
+                                        <select name="" id="">
+                                          <option value="">selecionar</option>
+                                          <option value="credito">Crédito</option>
+                                          <option value="debto">Débto</option>
+                                          <option value="boleto">Boleto</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group-form">
+                                        <label>valor</label>
+                                        <input type="text" placeholder="R$---">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="btn_group">
+                                        <div class="btn_group_btns">
+                                            <button mat-button class="btn btn_cancelar" type="button">Cancelar</button>
+                                            <button mat-button class="btn btn_adicionar">Adicionar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="content">
+                    <div class="cadastrar_notas">
+                        <h1>Cadastrar notas</h1>
+                        <h2>Você precisa confimar o cadastro dessa lista de notas</h2>
+
+                        <div class="table_cadastrar_notas">
+                            <table cellpadding="0" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>loja</th>
+                                        <th>no da nota</th>
+                                        <th>Data da nota</th>
+                                        <th>cadastro</th>
+                                        <th>valor</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</section>

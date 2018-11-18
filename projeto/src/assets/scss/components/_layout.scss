@@ -1,0 +1,155 @@
+// estrutura do layout
+.container {
+    @include flexbox;
+    @include margin(0, auto);
+}
+
+.content {
+    @include padding(30px, 30px);
+}
+
+.row {
+    display: inline-block;
+    width: 100%;
+}
+
+//COLUNA DA ESQUERDA
+.coluna-esquerda {
+    height: 100vh;
+    width: 417px;
+    border-right: solid 1px map-get($gray, 2);
+    background-color: map-get($gray, 1);
+}
+
+.input-group {
+    @include flexbox;
+    @include align-items(center);
+    height: 60px;
+    border-bottom: solid 1px map-get($gray, 2);
+}
+
+.input_search {
+    height: 100%;
+    font-family: SourceSansPro-Regular;
+    font-style: italic;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 18px!important;
+    color: map-get($green, 1);
+    @include x-calc(width, "100% - 68px");
+    @include padding(10px, 10px);
+    padding-left: 30px;
+}
+
+.btn_search {
+    @include flexbox;
+    @include justify-content(center);
+    @include align-content(center);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 68px;
+    height: 61px;
+    border-left: solid 1px map-get($gray, 2)!important;
+    background: url(#{$path-img}/search.png) no-repeat center center;
+}
+
+.clients {
+    @include padding(0, 36px);
+    .clients_list {
+        font-family: SourceSansPro-Regular;
+        @include font-size(13);
+        @include padding(20px, 0);
+        border-bottom: solid 1px map-get($gray, 3);
+        a {
+            @include flexbox;
+            @include flex-direction(column);
+            span {
+                display: inline-block;
+                margin-bottom: 5px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .clients_list_email {}
+    .clients_list_name {
+        font-family: SourceSansPro-Bold;
+        color: map-get($green, 1);
+        @include font-size(14);
+        text-transform: capitalize;
+    }
+    .clients_list_cod {}
+}
+
+// COLUNAS DIREITA
+.coluna-direita {
+    width: 100%;
+}
+
+.titulo_principal {
+    @include font-size(23.90665);
+    @include flexbox;
+    @include align-items(center);
+    height: 60px;
+    font-family: SourceSansPro-SemiBold;
+    color: map-get($green, 1);
+    padding-left: 34px;
+    border-bottom: solid 1px map-get($gray, 2);
+}
+
+.tab {
+    @include flexbox;
+    @include padding(10px, 10px);
+    padding-left: 34px;
+    .tab_item {
+        text-transform: capitalize;
+        min-width: 100px;
+        @include padding(10px, 10px);
+    }
+}
+
+//form
+.input-group-form {
+    @include flexbox;
+    @include flex-direction(column);
+    width: 139px;
+    height: 38px;
+}
+
+.store_form {
+    .row {
+        @include margin(17px, 0);
+    }
+}
+
+.store_form_store {
+    width: 100%;
+}
+
+.store_form_notas {
+    @include flexbox;
+    @include justify-content(space-between);
+}
+
+.btn_cancelar {
+    border: solid 1px #666666!important;
+    color: #808080!important;
+}
+
+.btn_adicionar {
+    color: map-get($white, 1);
+    background-color: #45cfff!important;
+}
+
+.btn_group {
+    @include flexbox;
+    @include justify-content(flex-end);
+    .btn_group_btns {
+        @include flexbox;
+        @include justify-content(space-between);
+        width: 155px;
+    }
+}
