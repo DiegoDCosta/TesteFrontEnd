@@ -11,6 +11,7 @@ import { PontosService } from './pontos.service';
 export class AbasComponent implements OnInit {
 
   public pontos:Pontos[];
+
   constructor(
     private pontosService: PontosService
   ) { }
