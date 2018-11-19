@@ -10,7 +10,7 @@ import { PontosService } from './pontos.service';
 })
 export class AbasComponent implements OnInit {
 
-  public pontos:Pontos[];
+  public pontos:object;
 
   constructor(
     private pontosService: PontosService

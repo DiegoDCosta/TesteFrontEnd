@@ -6,11 +6,11 @@
     <mat-tab-group>
         <mat-tab label="TRANSAÇÕES">
             <div class="tab">
-                <div class="tab_item"> Saldo <br>{{ pontos?.total | currency:'BRL':'symbol-narrow':'4.2-2'}}
+                <div class="tab_item"> Saldo <br>{{ pontos?.total | currency:'BRL'}}
                 </div>
-                <div class="tab_item"> Histórico <br>{{ pontos?.historico | currency:'BRL':'symbol-narrow':'4.2-2' }}</div>
-                <div class="tab_item"> Utilizados <br>{{ pontos?.utilizados | currency:'BRL':'symbol-narrow':'4.2-2' }}</div>
-                <div class="tab_item"> Expirados <br>{{ pontos?.expirados | currency:'BRL':'symbol-narrow':'4.2-2' }}</div>
+                <div class="tab_item"> Histórico <br>{{ pontos?.historico | currency:'BRL' }}</div>
+                <div class="tab_item"> Utilizados <br>{{ pontos?.utilizados | currency:'BRL' }}</div>
+                <div class="tab_item"> Expirados <br>{{ pontos?.expirados | currency:'BRL' }}</div>
             </div>
         </mat-tab>
         <mat-tab label="BENEFÍCIOS">

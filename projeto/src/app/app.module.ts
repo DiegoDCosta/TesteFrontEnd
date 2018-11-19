@@ -12,23 +12,25 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { routing } from './app.routes'
 import { MaterialModule } from './material';
 import { LayoutComponent } from './layout/layout.component';
-import { ClientesComponent } from './clientes/clientes.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AbasComponent } from './shared/abas/abas.component';
 import { AdicionarNotasComponent } from './shared/adicionar-notas/adicionar-notas.component';
 import { CadastrarNotasComponent } from './shared/cadastrar-notas/cadastrar-notas.component';
+import { ClienteComponent } from './cliente/cliente/cliente.component';
+import { PerfilComponent } from './cliente/perfil/perfil.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LayoutComponent,
-    ClientesComponent,
     HomeComponent,
     AbasComponent,
     AdicionarNotasComponent,
-    CadastrarNotasComponent
+    CadastrarNotasComponent,
+    ClienteComponent,
+    PerfilComponent
   ],
   imports: [
     BrowserModule,
