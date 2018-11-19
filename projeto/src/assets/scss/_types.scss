@@ -108,3 +108,7 @@ select {
     line-height: 26px!important;
     padding: 0 10px!important;
 }
+
+.img-circle {
+    @include border-radius(100px);
+}

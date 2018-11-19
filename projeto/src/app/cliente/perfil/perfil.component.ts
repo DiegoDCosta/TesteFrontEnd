@@ -12,6 +12,9 @@ export class PerfilComponent implements OnInit {
 
   public perfil:object;
 
+  //recebe a imagem do perfil
+  public foto_perfil = "/src/assets/images/foto-perfil.jpg"
+
   constructor(
     private perfilService: PerfilService
   ) { }
@@ -20,10 +23,9 @@ export class PerfilComponent implements OnInit {
     this.perfilService.getPerfilSelecionado().
     subscribe(
       resp => {
-        this.perfil = resp
+        this.perfil = resp;
         console.log(resp)
       }
     )
   }
-
 }

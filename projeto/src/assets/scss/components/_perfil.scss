@@ -1,0 +1,67 @@
+.perfil_cliente {
+    .perfil {
+        @include flexbox;
+        @include flex-direction(column);
+        @include margin(60px, auto)
+    }
+    .perfil_container {
+        @include flexbox;
+        @include justify-content(center);
+        @include align-items(center);
+    }
+    .perfil_foto {
+        @include flexbox;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .perfil_voltar {
+        background: url("#{$path-img}/arrow_back.png") center center no-repeat;
+        margin-left: -60px;
+        margin-right: 50px;
+        @include padding(15px,
+        15px);
+    }
+    .perfil_info {
+        p {
+            @include margin(5px,
+            0);
+        }
+        text-align: center;
+        .perfil_info_nome {
+            color: map-get($green, 1);
+            @include font-size(18);
+            font-family: SourceSansPro-Bold;
+        }
+        .perfil_info_cpf_cod {
+            color: map-get($gray, 4);
+            @include font-size(17);
+            font-family: SourceSansPro-Regular;
+        }
+    }
+    .perfil_cliente_dados {
+        ul {
+            @include padding(0,
+            0);
+            @include margin(0,
+            0);
+            li {
+                border-top: solid 1px map-get($gray, 3);
+                @include flexbox;
+                @include flex-direction(column);
+                @include padding(24px,
+                0);
+                @include font-size(17);
+                font-family: SourceSansPro-Regular;
+                line-height: 16.6px
+            }
+        }
+    }
+    .destaque {
+        font-family: SourceSansPro-Bold;
+        @include font-size(13);
+        text-transform: uppercase;
+        color: map-get($green, 1);
+        margin-bottom: 10px;
+    }
+}

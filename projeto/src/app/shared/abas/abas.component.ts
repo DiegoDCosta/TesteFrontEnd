@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Pontos } from "./pontos";
 import { PontosService } from './pontos.service';
 
 @Component({

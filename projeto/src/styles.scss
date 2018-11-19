@@ -10,6 +10,8 @@
 @import "assets/scss/resets";
 @import "assets/scss/colors";
 @import "assets/scss/types";
+//componentes da aplicação
+@import "assets/scss/components/components.scss";
 //
 @import "assets/scss/media_queries"; // esse import deve sempre ser o último
 // LAYOUT EM HTML QUE SERÁ DISTRIBUIDO EM COMPONENT DEPOIS
