@@ -17,7 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AbasComponent } from './shared/abas/abas.component';
 import { AdicionarNotasComponent } from './shared/adicionar-notas/adicionar-notas.component';
 import { CadastrarNotasComponent } from './shared/cadastrar-notas/cadastrar-notas.component';
-import { ClienteComponent } from './cliente/cliente/cliente.component';
+import { ClienteComponent } from './cliente/cliente.component';
 import { PerfilComponent } from './cliente/perfil/perfil.component';
 
 
@@ -30,7 +30,7 @@ import { PerfilComponent } from './cliente/perfil/perfil.component';
     AdicionarNotasComponent,
     CadastrarNotasComponent,
     ClienteComponent,
-    PerfilComponent
+    PerfilComponent,
   ],
   imports: [
     BrowserModule,
