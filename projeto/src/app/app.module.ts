@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, LOCALE_ID } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
@@ -19,6 +19,8 @@ import { AdicionarNotasComponent } from './shared/adicionar-notas/adicionar-nota
 import { CadastrarNotasComponent } from './shared/cadastrar-notas/cadastrar-notas.component';
 import { ClienteComponent } from './cliente/cliente.component';
 import { PerfilComponent } from './cliente/perfil/perfil.component';
+import { FiltroPipe } from './cliente/filtro.pipe';
+
 
 
 @NgModule({
@@ -31,11 +33,13 @@ import { PerfilComponent } from './cliente/perfil/perfil.component';
     CadastrarNotasComponent,
     ClienteComponent,
     PerfilComponent,
+    FiltroPipe,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
+    FormsModule,
     HttpClientModule,
     routing
   ],

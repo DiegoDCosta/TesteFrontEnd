@@ -1,15 +1,17 @@
 <header>
+
     <div class="input-group">
-        <input type="text" class="input_search" placeholder="Paulo">
+        <input type="text" class="input_search" [(ngModel)]="filtraCliente">
         <button mat-button class="btn_search"></button>
     </div>
+
 </header>
 <div class="clients">
     <ul>
-        <li class="clients_list" *ngFor="let cliente of clientes">
+        <li class="clients_list" *ngFor="let cliente of clientes | filtro: filtraCliente">
             <a [routerLink]="['/perfil']" class="clients_list_link">
                 <span class="clients_list_email">{{ cliente.email }}</span>
-                <span class="clients_list_name">{{ cliente.nome }}</span>
+                <span class="clients_list_name">{{ cliente.nome  }}</span>
                 <span class="clients_list_cod">{{ cliente.cpf }}</span>
             </a>
         </li>
