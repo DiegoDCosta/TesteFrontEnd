@@ -11,22 +11,27 @@ import { ClientesService } from "./clientes.service";
 })
 export class ClienteComponent implements OnInit {
 
-    //recebe os dados do serviço
-    public clientes:Clientes[];
+
+  //recebe os dados do serviço
+  public clientes:Clientes;
 
   constructor(
-    private ClientesService: ClientesService
-  ) { }
+    private clientesService: ClientesService
+  ) {
+
+   }
 
   ngOnInit() {
 
-    this.ClientesService.getClientes()
+    this.clientesService.getClientes()
     .subscribe(
       resp => {
         this.clientes = resp;
         console.log(resp)
       }
     )
+
+
   }
 
 }

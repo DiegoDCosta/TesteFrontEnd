@@ -1,41 +1,50 @@
 <section>
-    <div class="perfil_cliente clients">
-        <header>
-            <div class="perfil">
-                <div class="perfil_container">
-                    <a class="perfil_voltar"></a>
-                    <div class="perfil_foto">
-                        <img [src]="foto_perfil" alt="" class="img-circle">
+    <div class="container">
+        <aside class="coluna-esquerda">
+            <div class="perfil_cliente clients">
+                <header>
+                    <div class="perfil">
+                        <div class="perfil_container">
+                            <a class="perfil_voltar" [routerLink]="['/']"></a>
+                            <div class="perfil_foto">
+                                <img [src]="foto_perfil" alt="" class="img-circle">
+                            </div>
+                        </div>
+                        <div class="perfil_info">
+                            <p class="perfil_info_nome"> {{ perfil?.nome }} </p>
+                            <p class="perfil_info_cpf_cod">CPF: {{ perfil?.cpf }} . Cód: {{ perfil?.codigo }}</p>
+                        </div>
                     </div>
-                </div>
-                <div class="perfil_info">
-                    <p class="perfil_info_nome"> {{ perfil?.nome }} </p>
-                    <p class="perfil_info_cpf_cod">CPF: {{ perfil?.cpf }} . Cód: {{ perfil?.codigo }}</p>
+                </header>
+                <div class="perfil_cliente_dados">
+                    <ul>
+                        <li>
+                            <span class="destaque">Observações importantes</span>
+                            <span>{{ perfil?.obs }}</span>
+                        </li>
+                        <li>
+                            <span class="destaque">E-MAIL</span>
+                            <span>{{ perfil?.email }}</span>
+                        </li>
+                        <li>
+                            <span class="destaque">Telefone</span>
+                            <span>{{ perfil?.telefone.pais }} {{ perfil?.telefone.area }} {{ perfil?.telefone.numero }}</span>
+                        </li>
+                        <li>
+                            <span class="destaque">Endereço</span>
+                            <span>
+                                      {{ perfil?.endereco.tipo }} {{ perfil?.endereco.logradouro }} , {{ perfil?.endereco.numero }} - {{ perfil?.endereco.complemento }} - {{ perfil?.endereco.bairro }} - {{ perfil?.endereco.cep }} {{ perfil?.endereco.cidade }} - {{ perfil?.endereco.estado
+                                      }} {{ perfil?.endereco.pais }}
+                                  </span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </header>
-        <div class="perfil_cliente_dados">
-            <ul>
-                <li>
-                    <span class="destaque">Observações importantes</span>
-                    <span>{{ perfil?.obs }}</span>
-                </li>
-                <li>
-                    <span class="destaque">E-MAIL</span>
-                    <span>{{ perfil?.email }}</span>
-                </li>
-                <li>
-                    <span class="destaque">Telefone</span>
-                    <span>{{ perfil?.telefone.pais }} {{ perfil?.telefone.area }} {{ perfil?.telefone.numero }}</span>
-                </li>
-                <li>
-                    <span class="destaque">Endereço</span>
-                    <span>
-                              {{ perfil?.endereco.tipo }} {{ perfil?.endereco.logradouro }} , {{ perfil?.endereco.numero }} - {{ perfil?.endereco.complemento }} - {{ perfil?.endereco.bairro }} - {{ perfil?.endereco.cep }} {{ perfil?.endereco.cidade }} - {{ perfil?.endereco.estado
-                              }} {{ perfil?.endereco.pais }}
-                          </span>
-                </li>
-            </ul>
-        </div>
+        </aside>
+        <main class="coluna-direita">
+            <app-abas></app-abas>
+            <app-adicionar-notas></app-adicionar-notas>
+            <app-cadastrar-notas></app-cadastrar-notas>
+        </main>
     </div>
 </section>

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 import { PontosService } from './pontos.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-abas',
@@ -12,7 +14,8 @@ export class AbasComponent implements OnInit {
   public pontos:object;
 
   constructor(
-    private pontosService: PontosService
+    private pontosService: PontosService,
+    public router: Router
   ) { }
 
   ngOnInit() {

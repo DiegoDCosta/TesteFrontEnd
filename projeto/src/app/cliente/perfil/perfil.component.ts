@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 import { PerfilService } from "./perfil.service";
 
 
@@ -10,14 +9,16 @@ import { PerfilService } from "./perfil.service";
 })
 export class PerfilComponent implements OnInit {
 
+  //recebe o objeto do perfil
   public perfil:object;
 
   //recebe a imagem do perfil
-  public foto_perfil = "/src/assets/images/foto-perfil.jpg"
+  public foto_perfil = "/src/assets/images/foto-perfil.jpg";
 
   constructor(
     private perfilService: PerfilService
-  ) { }
+  ) {
+   }
 
   ngOnInit() {
     this.perfilService.getPerfilSelecionado().
@@ -28,4 +29,6 @@ export class PerfilComponent implements OnInit {
       }
     )
   }
+
+
 }

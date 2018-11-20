@@ -58,6 +58,13 @@
 .clients {
     @include padding(0, 36px);
     .clients_list {
+        .clients_list_link {
+            text-decoration: none;
+            color: map-get($gray, 3);
+            &:visited {
+                color: map-get($gray, 4);
+            }
+        }
         font-family: SourceSansPro-Regular;
         @include font-size(13);
         @include padding(20px, 0);

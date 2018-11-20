@@ -7,7 +7,7 @@
 <div class="clients">
     <ul>
         <li class="clients_list" *ngFor="let cliente of clientes">
-            <a>
+            <a [routerLink]="['/perfil']" class="clients_list_link">
                 <span class="clients_list_email">{{ cliente.email }}</span>
                 <span class="clients_list_name">{{ cliente.nome }}</span>
                 <span class="clients_list_cod">{{ cliente.cpf }}</span>
