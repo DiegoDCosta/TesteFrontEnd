@@ -8,3 +8,37 @@
         @include padding(10px, 10px);
     }
 }
+
+.tab_item {
+    @include flexbox;
+    @include flex-direction(column);
+    @include font-size(12);
+}
+
+.pontos {
+    font-family: SourceSansPro-It;
+    @include font-size(16);
+    color: map-get($green, 1);
+    &.destaque {
+        font-weight: bold;
+    }
+}
+
+.mat-tab-header {
+    font-family: SourceSansPro-Regular;
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar {
+    background-color: #45cfff!important
+}
+
+.mat-tab-label-active {
+    font-family: SourceSansPro-Semibold;
+    font-weight: 600;
+    color: map-get($green, 1);
+}
+
+.mat-tab-label .mat-tab-label-content {
+    font-family: SourceSansPro-Regular;
+    font-size: 12px;
+}

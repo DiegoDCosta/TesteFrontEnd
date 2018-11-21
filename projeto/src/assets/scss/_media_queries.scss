@@ -16,6 +16,9 @@
             width: 680px;
         }
     }
+    .content {
+        width: auto
+    }
     .perfil_cliente {
         .perfil_voltar {
             margin-left: -30px!important;
@@ -47,6 +50,9 @@
             width: 680px;
         }
     }
+    .content {
+        width: auto
+    }
     .perfil_cliente {
         .perfil_voltar {
             margin-left: -30px!important;
@@ -69,6 +75,10 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+    .coluna-esquerda {
+        min-width: 417px;
+        width: calc(100% / 3);
+    }
     .perfil_cliente {
         .perfil_voltar {
             margin-left: -40px;

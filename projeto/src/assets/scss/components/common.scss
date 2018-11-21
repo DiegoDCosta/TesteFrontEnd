@@ -59,7 +59,7 @@
 .content {
     @include transition;
     @include padding(30px, 30px);
-    max-width: 733px;
+    width: 733px;
 }
 
 .row {
