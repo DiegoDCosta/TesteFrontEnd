@@ -6,37 +6,13 @@
     <mat-tab-group>
         <mat-tab label="TRANSAÇÕES">
             <div class="tab">
-                <div class="tab_item"> Saldo <br>
-                    <ng-container *ngIf="router.url === '/' ; else elseTemplate">
-                        ---
-                    </ng-container>
-                    <ng-template #elseTemplate>
-                        {{ pontos?.total | currency:'BRL'}}
-                    </ng-template>
+                <div class="tab_item"> Saldo <br> {{ pontos?.total | currency:'BRL'}}
                 </div>
-                <div class="tab_item"> Histórico <br>
-                    <ng-container *ngIf="router.url === '/' ; else elseTemplate">
-                        ---
-                    </ng-container>
-                    <ng-template #elseTemplate>
-                        {{ pontos?.historico | currency:'BRL' }}
-                    </ng-template>
+                <div class="tab_item"> Histórico <br> {{ pontos?.historico | currency:'BRL' }}
                 </div>
-                <div class="tab_item"> Utilizados <br>
-                    <ng-container *ngIf="router.url === '/' ; else elseTemplate">
-                        ---
-                    </ng-container>
-                    <ng-template #elseTemplate>
-                        {{ pontos?.utilizados | currency:'BRL' }}
-                    </ng-template>
+                <div class="tab_item"> Utilizados <br> {{ pontos?.utilizados | currency:'BRL' }}
                 </div>
-                <div class="tab_item"> Expirados <br>
-                    <ng-container *ngIf="router.url === '/' ; else elseTemplate">
-                        ---
-                    </ng-container>
-                    <ng-template #elseTemplate>
-                        {{ pontos?.expirados | currency:'BRL' }}
-                    </ng-template>
+                <div class="tab_item"> Expirados <br> {{ pontos?.expirados | currency:'BRL' }}
                 </div>
             </div>
         </mat-tab>

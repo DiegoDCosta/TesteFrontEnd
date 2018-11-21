@@ -3,10 +3,6 @@
     font-family: SourceSansPro-Regular;
 }
 
-.rtl {
-    direction: rtl;
-}
-
 //form
 .input-group-form {
     @include flexbox;

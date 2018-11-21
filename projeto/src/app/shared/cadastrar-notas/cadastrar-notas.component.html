@@ -45,8 +45,8 @@
 
                             <label>valor</label>
                             <!-- example for pt-BR money -->
-                            <input formControlName="valor" currencyMask [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }" />
-                            <div *ngIf="submitted && f.pagamento.errors" class="invalid-feedback">
+                            <input formControlName="valor" currencyMask [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',', align:'left' }" />
+                            <div *ngIf="submitted && f.pagamento.errors" class="invalid-feedback" style="text-align: left!important">
                                 <div *ngIf="f.pagamento.errors.required">Informe o valor</div>
                             </div>
                         </div>
