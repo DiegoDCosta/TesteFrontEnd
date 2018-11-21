@@ -5,7 +5,6 @@
             <div class="store">
                 <h1>Adicionar nota</h1>
                 <form [formGroup]="formCadastraNota" (ngSubmit)="onSubmit()" class="store_form">
-                    {{ formCadastraNota.valid }} {{ formCadastraNota.value | json }}
                     <div class="row ">
                         <div class="input-group-form store_form_store">
                             <label>loja</label>
@@ -18,14 +17,14 @@
                     <div class="row store_form_notas ">
                         <div class="input-group-form ">
                             <label>No DA NOTA</label>
-                            <input type="text " formControlName="numero" placeholder="--- ">
+                            <input type="number" formControlName="numero" placeholder="--- ">
                             <div *ngIf="submitted && f.numero.errors" class="invalid-feedback">
                                 <div *ngIf="f.numero.errors.required">First Name is required</div>
                             </div>
                         </div>
-                        <div class="input-group-form ">
+                        <div class="input-group-form">
                             <label>DATA DA NOTA</label>
-                            <input type="text " formControlName="data" placeholder="--- ">
+                            <input type="date" formControlName="data" placeholder="--- ">
                             <div *ngIf="submitted && f.data.errors" class="invalid-feedback">
                                 <div *ngIf="f.data.errors.required">First Name is required</div>
                             </div>
@@ -86,7 +85,7 @@
                         <tr *ngFor="let nota of notas_cadastradas ">
                             <td> {{ nota.loja }} </td>
                             <td> {{ nota.numero }} </td>
-                            <td> {{ nota.data }} </td>
+                            <td> {{ nota.data | date: 'dd/MM/yyyy' }} </td>
                             <td> {{ nota.pagamento }} </td>
                             <td> {{ nota.valor }} </td>
                         </tr>
