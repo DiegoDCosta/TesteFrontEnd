@@ -11,12 +11,12 @@ import { Router } from '@angular/router';
 })
 export class AbasComponent implements OnInit {
 
-  public pontos:object;
+  public pontos: object;
 
   constructor(
     private pontosService: PontosService,
     public router: Router
-  ) { }
+  ) {}
 
   ngOnInit() {
     this.pontosService.getPontos()

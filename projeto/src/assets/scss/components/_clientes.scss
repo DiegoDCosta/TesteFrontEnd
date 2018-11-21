@@ -1,0 +1,36 @@
+// looping de clientes na coluna da esquerda
+.clients {
+    @include padding(0, 36px);
+    .clients_list {
+        .clients_list_link {
+            text-decoration: none;
+            color: map-get($gray, 3);
+            &:visited {
+                color: map-get($gray, 4);
+            }
+        }
+        font-family: SourceSansPro-Regular;
+        @include font-size(13);
+        @include padding(20px, 0);
+        border-bottom: solid 1px map-get($gray, 3);
+        a {
+            @include flexbox;
+            @include flex-direction(column);
+            span {
+                display: inline-block;
+                margin-bottom: 5px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .clients_list_email {}
+    .clients_list_name {
+        font-family: SourceSansPro-Bold;
+        color: map-get($green, 1);
+        @include font-size(14);
+        text-transform: capitalize;
+    }
+    .clients_list_cod {}
+}

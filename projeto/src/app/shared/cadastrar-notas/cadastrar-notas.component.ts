@@ -13,6 +13,9 @@ export class CadastrarNotasComponent implements OnInit {
   submitted = false;
   public notas_cadastradas = []
 
+  //máscaras
+
+
   constructor(
     private formBuilder: FormBuilder
   ) { }

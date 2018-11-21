@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, LOCALE_ID } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CurrencyMaskModule } from "ng2-currency-mask";
 
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
@@ -40,6 +41,7 @@ import { FiltroPipe } from './cliente/filtro.pipe';
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
+    CurrencyMaskModule,
     routing
   ],
   providers: [

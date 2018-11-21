@@ -2,3 +2,50 @@
     color: map-get($error, 1);
     font-family: SourceSansPro-Regular;
 }
+
+.rtl {
+    direction: rtl;
+}
+
+//form
+.input-group-form {
+    @include flexbox;
+    @include flex-direction(column);
+    width: 139px;
+    height: 38px;
+}
+
+.store_form {
+    .row {
+        @include margin(17px, 0);
+    }
+}
+
+.store_form_store {
+    width: 100%;
+}
+
+.store_form_notas {
+    @include flexbox;
+    @include justify-content(space-between);
+}
+
+.btn_cancelar {
+    border: solid 1px #666666!important;
+    color: #808080!important;
+}
+
+.btn_adicionar {
+    color: map-get($white, 1);
+    background-color: #45cfff!important;
+}
+
+.btn_group {
+    @include flexbox;
+    @include justify-content(flex-end);
+    .btn_group_btns {
+        @include flexbox;
+        @include justify-content(space-between);
+        width: 155px;
+    }
+}

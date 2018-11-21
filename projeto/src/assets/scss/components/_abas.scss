@@ -1,0 +1,10 @@
+.tab {
+    @include flexbox;
+    @include padding(10px, 10px);
+    padding-left: 34px;
+    .tab_item {
+        text-transform: capitalize;
+        min-width: 100px;
+        @include padding(10px, 10px);
+    }
+}

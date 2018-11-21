@@ -1,0 +1,150 @@
+//RECURSOS DE CSS DE ELEMENTOS GLOBAIS
+// COLUNAS ESQUERDA
+.coluna-esquerda {
+    height: 100vh;
+    width: 417px;
+    border-right: solid 1px map-get($gray, 2);
+    background-color: map-get($gray, 1);
+}
+
+// COLUNAS DIREITA
+.coluna-direita {
+    width: 100%;
+}
+
+.input-group {
+    @include flexbox;
+    @include align-items(center);
+    height: 60px;
+    border-bottom: solid 1px map-get($gray, 2);
+}
+
+.input_search {
+    height: 100%;
+    font-family: SourceSansPro-Regular;
+    font-style: italic;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 18px!important;
+    color: map-get($green, 1);
+    @include x-calc(width, "100% - 68px");
+    @include padding(10px, 10px);
+    padding-left: 30px;
+}
+
+.btn_search {
+    @include flexbox;
+    @include justify-content(center);
+    @include align-content(center);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 68px;
+    height: 61px;
+    border-left: solid 1px map-get($gray, 2)!important;
+    background: url(#{$path-img}/search.png) no-repeat center center;
+}
+
+.container {
+    @include flexbox;
+    @include margin(0, auto);
+}
+
+.content {
+    @include padding(30px, 30px);
+}
+
+.row {
+    display: inline-block;
+    width: 100%;
+}
+
+.titulo_principal {
+    @include font-size(23.90665);
+    @include flexbox;
+    @include align-items(center);
+    height: 60px;
+    font-family: SourceSansPro-SemiBold;
+    color: map-get($green, 1);
+    padding-left: 34px;
+    border-bottom: solid 1px map-get($gray, 2);
+}
+
+//forms
+input,
+select {
+    min-height: 25px;
+    border: none;
+    border-bottom: solid 1px map-get($gray, 4);
+    outline: none;
+    height: 26px;
+    @include x-transition(0.2s ease all);
+    @include font-size(13);
+    font-family: SourceSansPro-Regular;
+    &:focus {
+        box-shadow: none;
+        border-bottom-color: rgba(0, 0, 0, 0.12);
+        @include x-transition(0.2s ease all);
+    }
+    &:not(:focus) {
+        @include x-transition(0.2s ease all);
+    }
+}
+
+.btn {
+    font-family: SourceSansPro-Semibold!important;
+    text-transform: capitalize;
+    font-size: 13px!important;
+    line-height: 26px!important;
+    padding: 0 10px!important;
+}
+
+.img-circle {
+    @include border-radius(100px);
+}
+
+//labels
+label {
+    @include font-size(10);
+    font-family: SourceSansPro-Bold;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: map-get($green, 1);
+}
+
+input[type="text"],
+select {
+    @include font-size(13);
+}
+
+button {
+    @include font-size(13);
+}
+
+table {
+    @include font-size(10);
+    @include padding(0, 0);
+    @include margin(0, 0);
+    border-collapse: collapse;
+    width: 100%;
+    thead {
+        text-align: left;
+        font-family: SourceSansPro-Bold;
+        background-color: map-get($green, 2);
+        font-weight: bold;
+        text-transform: uppercase;
+        color: map-get($green, 1);
+        tr {
+            th {
+                @include padding(10px, 10px);
+            }
+        }
+    }
+    tbody {
+        border-bottom: 1px solid map-get($gray, 4);
+        td {
+            padding: 10px;
+        }
+    }
+}

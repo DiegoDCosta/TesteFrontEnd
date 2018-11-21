@@ -12,8 +12,8 @@
 @import "assets/scss/types";
 //componentes da aplicação
 @import "assets/scss/components/components.scss";
-//
-@import "assets/scss/media_queries"; // esse import deve sempre ser o último
+//// esse import deve sempre ser o último, pois são as queries de css
+@import "assets/scss/media_queries";
 // LAYOUT EM HTML QUE SERÁ DISTRIBUIDO EM COMPONENT DEPOIS
-@import "assets/scss/components/layout"; // IMPORT MATERIAL DESIGN //
+// IMPORT MATERIAL DESIGN //
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
