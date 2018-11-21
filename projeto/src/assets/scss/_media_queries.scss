@@ -68,6 +68,13 @@
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .perfil_cliente {
+        .perfil_voltar {
+            margin-left: -40px;
+            margin-right: 20px;
+        }
+    }
+}
 
 @media (max-width: 991.98px) {}
