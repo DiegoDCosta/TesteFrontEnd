@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-cadastrar-notas',
   templateUrl: './cadastrar-notas.component.html',
@@ -13,14 +15,20 @@ export class CadastrarNotasComponent implements OnInit {
   submitted = false;
   public notas_cadastradas = []
 
-  //máscaras
+  public href: string;
 
+    constructor(
+    private formBuilder: FormBuilder,
+    private router : Router
+  ) {
 
-  constructor(
-    private formBuilder: FormBuilder
-  ) { }
+   }
 
   ngOnInit() {
+
+    this.href = this.router.url;
+
+
 
     //inicializando o form
     this.formCadastraNota = this.formBuilder.group({
@@ -30,6 +38,10 @@ export class CadastrarNotasComponent implements OnInit {
       pagamento:['',Validators.required],
       valor:['',Validators.required]
     });
+
+    if(this.href === '/'){
+      this.formCadastraNota.disable();
+    }
 
   }
 
@@ -53,4 +65,5 @@ export class CadastrarNotasComponent implements OnInit {
     //limpa o form após o cadastro
     this.formCadastraNota.reset();
   }
+
 }

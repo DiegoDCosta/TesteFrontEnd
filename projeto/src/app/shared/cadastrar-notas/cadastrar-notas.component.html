@@ -55,7 +55,7 @@
                         <div class="btn_group">
                             <div class="btn_group_btns">
                                 <button mat-button class="btn btn_cancelar" type="reset">Cancelar</button>
-                                <button type="submit" mat-button class="btn btn_adicionar">Adicionar</button>
+                                <button [disabled]="!formCadastraNota.valid" mat-button class="btn btn_adicionar">Adicionar</button>
                             </div>
                         </div>
                     </div>
@@ -81,6 +81,7 @@
                             <th>Data da nota</th>
                             <th>cadastro</th>
                             <th>valor</th>
+                            <th>&nbsp;</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -90,6 +91,15 @@
                             <td> {{ nota.data | date: 'dd/MM/yyyy' }} </td>
                             <td> {{ nota.pagamento }} </td>
                             <td> {{ nota.valor | currency:'BRL' }} </td>
+                            <td>
+                                <button mat-button [matMenuTriggerFor]="menu">
+                                  <img src="src/assets/images/menu_table.png">
+                                </button>
+                                <mat-menu #menu="matMenu">
+                                    <button mat-menu-item>Item 1</button>
+                                    <button mat-menu-item>Item 2</button>
+                                </mat-menu>
+                            </td>
                         </tr>
                     </tbody>
                 </table>

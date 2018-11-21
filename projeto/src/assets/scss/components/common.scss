@@ -43,7 +43,6 @@
     @include align-content(center);
     border: none;
     outline: none;
-    cursor: pointer;
     width: 68px;
     height: 61px;
     border-left: solid 1px map-get($gray, 2)!important;
@@ -149,6 +148,7 @@ table {
         }
     }
     tbody {
+        @include font-size(12);
         border-bottom: 1px solid map-get($gray, 4);
         td {
             padding: 10px;

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,9 +7,13 @@ import { RouterLinkActive } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+  ) {
+
+  }
 
   ngOnInit() {
+
   }
 
 }

@@ -8,20 +8,43 @@
             <div class="tab">
                 <div class="tab_item"> Saldo
                     <span class="pontos destaque">
-                  {{ pontos?.total | currency:'BRL'}}
-                </span>
+                        <div *ngIf="!verificaHome">
+                            {{ pontos?.total | currency:'BRL'}}
+                        </div>
+                        <div *ngIf="verificaHome">
+                          ---
+                        </div>
+                    </span>
                 </div>
                 <div class="tab_item"> Histórico
                     <span class="pontos">
-                  {{ pontos?.historico | currency:'BRL' }}</span>
+                        <div *ngIf="!verificaHome">
+                            {{ pontos?.historico | currency:'BRL'}}
+                        </div>
+                        <div *ngIf="verificaHome">
+                          ---
+                        </div>
+                    </span>
                 </div>
                 <div class="tab_item"> Utilizados
                     <span class="pontos">
-                  {{ pontos?.utilizados | currency:'BRL' }}</span>
+                        <div *ngIf="!verificaHome">
+                            {{ pontos?.utilizados | currency:'BRL'}}
+                        </div>
+                        <div *ngIf="verificaHome">
+                          ---
+                        </div>
+                      </span>
                 </div>
                 <div class="tab_item"> Expirados
                     <span class="pontos">
-                  {{ pontos?.expirados | currency:'BRL' }}</span>
+                      <div *ngIf="!verificaHome">
+                          {{ pontos?.expirados | currency:'BRL'}}
+                      </div>
+                      <div *ngIf="verificaHome">
+                        ---
+                      </div>
+                    </span>
                 </div>
             </div>
         </mat-tab>
