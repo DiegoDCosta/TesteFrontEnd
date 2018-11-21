@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, LOCALE_ID } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
@@ -15,7 +15,6 @@ import { LayoutComponent } from './layout/layout.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AbasComponent } from './shared/abas/abas.component';
-import { AdicionarNotasComponent } from './shared/adicionar-notas/adicionar-notas.component';
 import { CadastrarNotasComponent } from './shared/cadastrar-notas/cadastrar-notas.component';
 import { ClienteComponent } from './cliente/cliente.component';
 import { PerfilComponent } from './cliente/perfil/perfil.component';
@@ -29,7 +28,6 @@ import { FiltroPipe } from './cliente/filtro.pipe';
     LayoutComponent,
     HomeComponent,
     AbasComponent,
-    AdicionarNotasComponent,
     CadastrarNotasComponent,
     ClienteComponent,
     PerfilComponent,
@@ -41,6 +39,7 @@ import { FiltroPipe } from './cliente/filtro.pipe';
     MaterialModule,
     FormsModule,
     HttpClientModule,
+    ReactiveFormsModule,
     routing
   ],
   providers: [

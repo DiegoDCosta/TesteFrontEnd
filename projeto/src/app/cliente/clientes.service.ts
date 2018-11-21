@@ -17,5 +17,4 @@ export class ClientesService {
   getClientes(){
     return this.http.get<Clientes>(`${API}/clientes.json`);
   }
-
 }

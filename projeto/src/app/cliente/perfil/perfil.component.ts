@@ -28,6 +28,8 @@ export class PerfilComponent implements OnInit {
         console.log(resp)
       }
     )
+
+
   }
 
 
