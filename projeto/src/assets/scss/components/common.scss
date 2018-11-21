@@ -1,4 +1,8 @@
 //RECURSOS DE CSS DE ELEMENTOS GLOBAIS
+.wrap {
+    @include flexbox;
+}
+
 // COLUNAS ESQUERDA
 .coluna-esquerda {
     min-height: 100%;
@@ -47,13 +51,15 @@
 }
 
 .container {
+    @include transition;
     @include flexbox;
-    @include flex-wrap(wrap);
     overflow-x: hidden;
 }
 
 .content {
+    @include transition;
     @include padding(30px, 30px);
+    max-width: 733px;
 }
 
 .row {

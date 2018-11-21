@@ -6,9 +6,6 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .wrap {
-        @include flexbox;
-    }
     .container {
         @include flex-wrap(nowrap);
         .coluna-esquerda {
@@ -40,7 +37,35 @@
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .container {
+        .coluna-esquerda {
+            width: 30%;
+        }
+        .coluna-direita {
+            min-width: 530px;
+            width: 680px;
+        }
+    }
+    .perfil_cliente {
+        .perfil_voltar {
+            margin-left: -30px!important;
+            margin-right: 10px!important;
+        }
+    }
+    .store_form_notas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        grid-row-gap: 10px;
+        grid-column-gap: 20px;
+        .input-group-form {
+            @include padding(20px, 0);
+            width: 100%;
+        }
+    }
+}
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {}
