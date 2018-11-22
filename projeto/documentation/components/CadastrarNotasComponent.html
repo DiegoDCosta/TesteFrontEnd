@@ -1,0 +1,802 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>projeto documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">projeto documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>CadastrarNotasComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/shared/cadastrar-notas/cadastrar-notas.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-cadastrar-notas</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./cadastrar-notas.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./cadastrar-notas.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#formCadastraNota">formCadastraNota</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#href">href</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#notas_cadastradas">notas_cadastradas</a>
+                            </li>
+                            <li>
+                                <a href="#submitted">submitted</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onSubmit">onSubmit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#f">f</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(formBuilder: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/shared/cadastrar-notas/cadastrar-notas.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>formBuilder</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngOnInit"></a>
+                        <span class="name">
+                            <b>
+                            ngOnInit
+                            </b>
+                            <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>ngOnInit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/shared/cadastrar-notas/cadastrar-notas.component.ts:27</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="onSubmit"></a>
+                        <span class="name">
+                            <b>
+                            onSubmit
+                            </b>
+                            <a href="#onSubmit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>onSubmit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/shared/cadastrar-notas/cadastrar-notas.component.ts:52</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="formCadastraNota"></a>
+                        <span class="name">
+                            <b>
+                            formCadastraNota
+                            </b>
+                            <a href="#formCadastraNota"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>formCadastraNota:     <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/shared/cadastrar-notas/cadastrar-notas.component.ts:14</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="href"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            href
+                            </b>
+                            <a href="#href"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>href:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/shared/cadastrar-notas/cadastrar-notas.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="notas_cadastradas"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            notas_cadastradas
+                            </b>
+                            <a href="#notas_cadastradas"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>notas_cadastradas:     <code>[]</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/shared/cadastrar-notas/cadastrar-notas.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="submitted"></a>
+                        <span class="name">
+                            <b>
+                            submitted
+                            </b>
+                            <a href="#submitted"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>submitted:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/shared/cadastrar-notas/cadastrar-notas.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="f"></a>
+                        <span class="name"><b>f</b><a href="#f"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>f()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/shared/cadastrar-notas/cadastrar-notas.component.ts:49</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { FormGroup, FormBuilder, Validators } from &#x27;@angular/forms&#x27;;
+
+import { Router } from &#x27;@angular/router&#x27;;
+
+@Component({
+  selector: &#x27;app-cadastrar-notas&#x27;,
+  templateUrl: &#x27;./cadastrar-notas.component.html&#x27;,
+  styleUrls: [&#x27;./cadastrar-notas.component.scss&#x27;]
+})
+export class CadastrarNotasComponent implements OnInit {
+
+  //registra o form
+  formCadastraNota:FormGroup;
+  submitted &#x3D; false;
+  public notas_cadastradas &#x3D; []
+
+  public href: string;
+
+    constructor(
+    private formBuilder: FormBuilder,
+    private router : Router
+  ) {
+
+   }
+
+  ngOnInit() {
+
+    this.href &#x3D; this.router.url;
+
+
+
+    //inicializando o form
+    this.formCadastraNota &#x3D; this.formBuilder.group({
+      loja:[&#x27;&#x27;, Validators.required],
+      numero:[&#x27;&#x27;, Validators.required],
+      data:[&#x27;&#x27;, Validators.required],
+      pagamento:[&#x27;&#x27;,Validators.required],
+      valor:[&#x27;&#x27;,Validators.required]
+    });
+
+    if(this.href &#x3D;&#x3D;&#x3D; &#x27;/&#x27;){
+      this.formCadastraNota.disable();
+    }
+
+  }
+
+  // convenience getter for easy access to form fields
+  get f() { return this.formCadastraNota.controls; }
+
+
+  onSubmit() {
+    this.submitted &#x3D; true;
+    if (this.formCadastraNota.invalid) {
+        return;
+    }
+
+    //coloca os valores na tabela
+    this.notas_cadastradas.push(this.formCadastraNota.value);
+
+    //debug
+    //console.log(this.formCadastraNota.value);
+    //alert(&#x27;SUCCESSO!! :-)\n\n&#x27; + JSON.stringify(this.formCadastraNota.value))
+
+    //limpa o form após o cadastro
+    this.formCadastraNota.reset();
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;!-- LISTAR - COMPONENTE--&gt;
+&lt;section&gt;
+    &lt;div class&#x3D;&quot;content&quot;&gt;
+        &lt;div class&#x3D;&quot;add_note&quot;&gt;
+            &lt;div class&#x3D;&quot;store&quot;&gt;
+                &lt;h1&gt;Adicionar nota&lt;/h1&gt;
+                &lt;form [formGroup]&#x3D;&quot;formCadastraNota&quot; (ngSubmit)&#x3D;&quot;onSubmit()&quot; class&#x3D;&quot;store_form&quot;&gt;
+                    &lt;div class&#x3D;&quot;row &quot;&gt;
+                        &lt;div class&#x3D;&quot;input-group-form store_form_store&quot;&gt;
+                            &lt;label&gt;loja&lt;/label&gt;
+                            &lt;input type&#x3D;&quot;text &quot; formControlName&#x3D;&quot;loja&quot; placeholder&#x3D;&quot;Razão social, nome fantasia ou CNPJ &quot;&gt;
+                            &lt;div *ngIf&#x3D;&quot;submitted &amp;&amp; f.loja.errors&quot; class&#x3D;&quot;invalid-feedback&quot;&gt;
+                                &lt;div *ngIf&#x3D;&quot;f.loja.errors.required&quot;&gt;Informe a loja&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;row store_form_notas &quot;&gt;
+                        &lt;div class&#x3D;&quot;input-group-form &quot;&gt;
+                            &lt;label&gt;No DA NOTA&lt;/label&gt;
+                            &lt;input type&#x3D;&quot;number&quot; formControlName&#x3D;&quot;numero&quot; placeholder&#x3D;&quot;--- &quot;&gt;
+                            &lt;div *ngIf&#x3D;&quot;submitted &amp;&amp; f.numero.errors&quot; class&#x3D;&quot;invalid-feedback&quot;&gt;
+                                &lt;div *ngIf&#x3D;&quot;f.numero.errors.required&quot;&gt;Informe número da nota&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;input-group-form&quot;&gt;
+                            &lt;label&gt;DATA DA NOTA&lt;/label&gt;
+                            &lt;input type&#x3D;&quot;date&quot; formControlName&#x3D;&quot;data&quot; placeholder&#x3D;&quot;--- &quot;&gt;
+                            &lt;div *ngIf&#x3D;&quot;submitted &amp;&amp; f.data.errors&quot; class&#x3D;&quot;invalid-feedback&quot;&gt;
+                                &lt;div *ngIf&#x3D;&quot;f.data.errors.required&quot;&gt;Informe a data na nota&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;input-group-form&quot;&gt;
+                            &lt;label&gt;forma de pagamento&lt;/label&gt;
+                            &lt;select formControlName&#x3D;&quot;pagamento&quot;&gt;
+                              &lt;option value&#x3D;&quot;&quot;&gt;selecionar&lt;/option&gt;
+                              &lt;option value&#x3D;&quot;credito&quot;&gt;Crédito&lt;/option&gt;
+                              &lt;option value&#x3D;&quot;debto&quot;&gt;Débto&lt;/option&gt;
+                              &lt;option value&#x3D;&quot;boleto&quot;&gt;Boleto&lt;/option&gt;
+                            &lt;/select&gt;
+                            &lt;div *ngIf&#x3D;&quot;submitted &amp;&amp; f.pagamento.errors&quot; class&#x3D;&quot;invalid-feedback&quot;&gt;
+                                &lt;div *ngIf&#x3D;&quot;f.pagamento.errors.required&quot;&gt;Informe a forma do pagamento&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;input-group-form&quot;&gt;
+
+                            &lt;label&gt;valor&lt;/label&gt;
+                            &lt;!-- example for pt-BR money --&gt;
+                            &lt;input formControlName&#x3D;&quot;valor&quot; currencyMask [options]&#x3D;&quot;{ prefix: &#x27;R$ &#x27;, thousands: &#x27;.&#x27;, decimal: &#x27;,&#x27;, align:&#x27;left&#x27; }&quot; /&gt;
+                            &lt;div *ngIf&#x3D;&quot;submitted &amp;&amp; f.pagamento.errors&quot; class&#x3D;&quot;invalid-feedback&quot; style&#x3D;&quot;text-align: left!important&quot;&gt;
+                                &lt;div *ngIf&#x3D;&quot;f.pagamento.errors.required&quot;&gt;Informe o valor&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;row&quot;&gt;
+                        &lt;div class&#x3D;&quot;btn_group&quot;&gt;
+                            &lt;div class&#x3D;&quot;btn_group_btns&quot;&gt;
+                                &lt;button mat-button class&#x3D;&quot;btn btn_cancelar&quot; type&#x3D;&quot;reset&quot;&gt;Cancelar&lt;/button&gt;
+                                &lt;button [disabled]&#x3D;&quot;!formCadastraNota.valid&quot; mat-button class&#x3D;&quot;btn btn_adicionar&quot;&gt;Adicionar&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/form&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- LISTAR NOTAS - COMPONENTE --&gt;
+&lt;section&gt;
+    &lt;div class&#x3D;&quot;content &quot;&gt;
+        &lt;div class&#x3D;&quot;cadastrar_notas &quot;&gt;
+            &lt;h1&gt;Cadastrar notas&lt;/h1&gt;
+            &lt;h2&gt;Você precisa confimar o cadastro dessa lista de notas&lt;/h2&gt;
+
+            &lt;div class&#x3D;&quot;table_cadastrar_notas &quot;&gt;
+                &lt;table cellpadding&#x3D;&quot;0 &quot; cellspacing&#x3D;&quot;0 &quot;&gt;
+                    &lt;thead&gt;
+                        &lt;tr&gt;
+                            &lt;th&gt;loja&lt;/th&gt;
+                            &lt;th&gt;no da nota&lt;/th&gt;
+                            &lt;th&gt;Data da nota&lt;/th&gt;
+                            &lt;th&gt;cadastro&lt;/th&gt;
+                            &lt;th&gt;valor&lt;/th&gt;
+                            &lt;th&gt;&amp;nbsp;&lt;/th&gt;
+                        &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                        &lt;tr *ngFor&#x3D;&quot;let nota of notas_cadastradas &quot;&gt;
+                            &lt;td&gt; {{ nota.loja }} &lt;/td&gt;
+                            &lt;td&gt; {{ nota.numero }} &lt;/td&gt;
+                            &lt;td&gt; {{ nota.data | date: &#x27;dd/MM/yyyy&#x27; }} &lt;/td&gt;
+                            &lt;td&gt; {{ nota.pagamento }} &lt;/td&gt;
+                            &lt;td&gt; {{ nota.valor | currency:&#x27;BRL&#x27; }} &lt;/td&gt;
+                            &lt;td&gt;
+                                &lt;button mat-button [matMenuTriggerFor]&#x3D;&quot;menu&quot;&gt;
+                                  &lt;img src&#x3D;&quot;src/assets/images/menu_table.png&quot;&gt;
+                                &lt;/button&gt;
+                                &lt;mat-menu #menu&#x3D;&quot;matMenu&quot;&gt;
+                                    &lt;button mat-menu-item&gt;Item 1&lt;/button&gt;
+                                    &lt;button mat-menu-item&gt;Item 2&lt;/button&gt;
+                                &lt;/mat-menu&gt;
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                &lt;/table&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./cadastrar-notas.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><!-- LISTAR - COMPONENTE--><section>    <div class="content">        <div class="add_note">            <div class="store">                <h1>Adicionar nota</h1>                <form [formGroup]="formCadastraNota" (ngSubmit)="onSubmit()" class="store_form">                    <div class="row ">                        <div class="input-group-form store_form_store">                            <label>loja</label>                            <input type="text " formControlName="loja" placeholder="Razão social, nome fantasia ou CNPJ ">                            <div *ngIf="submitted && f.loja.errors" class="invalid-feedback">                                <div *ngIf="f.loja.errors.required">Informe a loja</div>                            </div>                        </div>                    </div>                    <div class="row store_form_notas ">                        <div class="input-group-form ">                            <label>No DA NOTA</label>                            <input type="number" formControlName="numero" placeholder="--- ">                            <div *ngIf="submitted && f.numero.errors" class="invalid-feedback">                                <div *ngIf="f.numero.errors.required">Informe número da nota</div>                            </div>                        </div>                        <div class="input-group-form">                            <label>DATA DA NOTA</label>                            <input type="date" formControlName="data" placeholder="--- ">                            <div *ngIf="submitted && f.data.errors" class="invalid-feedback">                                <div *ngIf="f.data.errors.required">Informe a data na nota</div>                            </div>                        </div>                        <div class="input-group-form">                            <label>forma de pagamento</label>                            <select formControlName="pagamento">                              <option value="">selecionar</option>                              <option value="credito">Crédito</option>                              <option value="debto">Débto</option>                              <option value="boleto">Boleto</option>                            </select>                            <div *ngIf="submitted && f.pagamento.errors" class="invalid-feedback">                                <div *ngIf="f.pagamento.errors.required">Informe a forma do pagamento</div>                            </div>                        </div>                        <div class="input-group-form">                            <label>valor</label>                            <!-- example for pt-BR money -->                            <input formControlName="valor" currencyMask [options]="{ prefix: \'R$ \', thousands: \'.\', decimal: \',\', align:\'left\' }" />                            <div *ngIf="submitted && f.pagamento.errors" class="invalid-feedback" style="text-align: left!important">                                <div *ngIf="f.pagamento.errors.required">Informe o valor</div>                            </div>                        </div>                    </div>                    <div class="row">                        <div class="btn_group">                            <div class="btn_group_btns">                                <button mat-button class="btn btn_cancelar" type="reset">Cancelar</button>                                <button [disabled]="!formCadastraNota.valid" mat-button class="btn btn_adicionar">Adicionar</button>                            </div>                        </div>                    </div>                </form>            </div>        </div>    </div></section><!-- LISTAR NOTAS - COMPONENTE --><section>    <div class="content ">        <div class="cadastrar_notas ">            <h1>Cadastrar notas</h1>            <h2>Você precisa confimar o cadastro dessa lista de notas</h2>            <div class="table_cadastrar_notas ">                <table cellpadding="0 " cellspacing="0 ">                    <thead>                        <tr>                            <th>loja</th>                            <th>no da nota</th>                            <th>Data da nota</th>                            <th>cadastro</th>                            <th>valor</th>                            <th>&nbsp;</th>                        </tr>                    </thead>                    <tbody>                        <tr *ngFor="let nota of notas_cadastradas ">                            <td> {{ nota.loja }} </td>                            <td> {{ nota.numero }} </td>                            <td> {{ nota.data | date: \'dd/MM/yyyy\' }} </td>                            <td> {{ nota.pagamento }} </td>                            <td> {{ nota.valor | currency:\'BRL\' }} </td>                            <td>                                <button mat-button [matMenuTriggerFor]="menu">                                  <img src="src/assets/images/menu_table.png">                                </button>                                <mat-menu #menu="matMenu">                                    <button mat-menu-item>Item 1</button>                                    <button mat-menu-item>Item 2</button>                                </mat-menu>                            </td>                        </tr>                    </tbody>                </table>            </div>        </div>    </div></section></div>'
+    var COMPONENTS = [{'name': 'AbasComponent', 'selector': 'app-abas'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CadastrarNotasComponent', 'selector': 'app-cadastrar-notas'},{'name': 'ClienteComponent', 'selector': 'app-cliente'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LayoutComponent', 'selector': 'app-layout'},{'name': 'PerfilComponent', 'selector': 'app-perfil'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'CadastrarNotasComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'CadastrarNotasComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
