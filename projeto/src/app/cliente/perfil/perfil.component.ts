@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { PerfilService } from "./perfil.service";
 
+import { Perfil } from "./perfil";
+
 
 @Component({
   selector: 'app-perfil',
@@ -10,7 +12,7 @@ import { PerfilService } from "./perfil.service";
 export class PerfilComponent implements OnInit {
 
   //recebe o objeto do perfil
-  public perfil:object;
+  public perfil;
 
   //recebe a imagem do perfil
   public foto_perfil = "/src/assets/images/foto-perfil.jpg";

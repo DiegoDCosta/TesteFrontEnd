@@ -11,7 +11,7 @@ import { API } from "../../API";
 })
 export class PerfilService {
 
-  public perfil:object;
+  public perfil:any;
 
   constructor(
     private http:HttpClient
