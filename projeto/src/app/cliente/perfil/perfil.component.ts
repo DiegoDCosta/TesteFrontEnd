@@ -15,7 +15,7 @@ export class PerfilComponent implements OnInit {
   public perfil;
 
   //recebe a imagem do perfil
-  public foto_perfil = "/src/assets/images/foto-perfil.jpg";
+  public foto_perfil = "assets/images/foto-perfil.jpg";
 
   constructor(
     private perfilService: PerfilService
