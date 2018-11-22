@@ -30,5 +30,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 Documentação do Angular.
 
-Para gerar a documentação do angular, navegue até o diretório `/projeto` e execute o comando `npm run compodoc`.
+Para gerar a documentação do angular, navegue até o diretório `/projeto`, ou seja a raíz, e execute o comando `npm run compodoc`.
 será gerado um diretório `documentation`
